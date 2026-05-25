@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Redirect to docs.mikuas.top
 
 on:
   push:
@@ -9,17 +9,28 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pages: write
-      id-token: write
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - run: npm ci
-      - run: npm run build
+      - name: Create redirect page
+        run: |
+          mkdir -p dist
+          cat > dist/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="utf-8">
+            <meta http-equiv="refresh" content="0; url=https://docs.mikuas.top">
+            <link rel="canonical" href="https://docs.mikuas.top">
+            <title>正在跳转...</title>
+          </head>
+          <body>
+            <script>location.href = "https://docs.mikuas.top"</script>
+            <p>正在跳转到 <a href="https://docs.mikuas.top">docs.mikuas.top</a></p>
+          </body>
+          </html>
+          EOF
       - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .vitepress/dist
+          publish_dir: ./dist
           publish_branch: gh-pages
