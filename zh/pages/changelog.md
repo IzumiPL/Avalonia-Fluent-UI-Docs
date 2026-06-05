@@ -6,6 +6,17 @@ permalink: /zh/pages/changelog/
 
 # 更新日志
 
+## v2.0.0
+
+* 更新Avalonia版本到12.0.3
+
+> nuget版本为1.0.3(Avalonia-11.3.4), 如需使用Avalonia-12版本,请从GitHub获取源码构建
+
+
+## v1.0.3
+* ...
+
+
 ## v1.0.1
 
 ### 添加了一新组件

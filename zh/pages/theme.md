@@ -31,22 +31,31 @@ Avalonia Fluent UI 支持亮色和暗色两种主题模式。
 
 ## 运行时切换主题
 
-可以通过代码在运行时动态切换主题：
+* 通过获取FluentAvaloniaTheme实例切换主题
 
 ```csharp
-using Avalonia;
-using Avalonia.Controls.ApplicationLifetimes;
-using Avalonia.Styling;
+// 获取实例
+FluentAvaliniaTheme.Instance;
 
-public void SetTheme(ThemeVariant theme)
+// 切换到暗色主题
+FluentAvaliniaTheme.Instance.CurrentTheme = ThemeVariant.Dark;
+
+// 切换到亮色主题
+FluentAvaliniaTheme.Instance.CurrentTheme = ThemeVariant.Light;
+```
+
+* 主题,主题色更改事件
+
+```csharp
+// 订阅主题更改事件
+FluentAvaloniaTheme.ThemeChanged += (_, theme) =>
 {
-    if (Application.Current is { ApplicationLifetime: IClassicDesktopStyleApplicationLifetime desktop })
-    {
-        Application.Current.RequestedThemeVariant = theme;
-    }
-}
+    Console.WriteLine($"当前主题: {theme}")
+};
 
-// 使用示例
-SetTheme(ThemeVariant.Dark);  // 切换到暗色主题
-SetTheme(ThemeVariant.Light); // 切换到亮色主题
+// 订阅主题色更改事件
+FluentAvaloniaTheme.ThemeColorChanged += (_, color) =>
+{
+    Console.WriteLine($"当前主题色: {color}")
+};
 ```

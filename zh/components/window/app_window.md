@@ -54,7 +54,9 @@ permalink: /zh/components/window/app_window/
 </wnd:AppWindow>
 ```
 
-* 如果设置了`TitleBarContent`, 需设置`TitleBarHitTestType`为`TitleBarHitTestType.Complex`, 否则会出现无法点击标题栏内容的情况
+> [!Warning]
+> 如果是1.0.3及以前的版本, 如果设置了`TitleBarContent`, 需设置`TitleBarHitTestType`为`TitleBarHitTestType.Complex`, 否则会出现无法点击标题栏内容的情况
+
 * 通过`EnableWindowEffect(true)` 启用窗口效果
 
 #### * 设置启动页面, 继承`IApplicationSplashScreen`实现成员方法

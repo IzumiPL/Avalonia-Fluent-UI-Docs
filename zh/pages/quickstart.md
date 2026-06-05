@@ -32,7 +32,7 @@ dotnet add package AvaloniaFluentUI
 ```xml
 <wd:AppWindow xmlns="https://github.com/avaloniaui"
                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                     xmlns:wd="using:AvaloniaFluentUI.Controls.Windoning"
+                     xmlns:wd="using:AvaloniaFluentUI.Windoning"
                      xmlns:ui="using:AvaloniaFluentUI.Controls"
                      x:Class="MyFluentApp.MainWindow"
                      Title="My Fluent App"
