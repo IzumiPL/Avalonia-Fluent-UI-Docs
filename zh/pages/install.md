@@ -6,6 +6,9 @@ permalink: /zh/pages/install/
 
 # 安装指南
 
+> [!Info]
+> 本文档基于的 Avalonia 的版本是 `12.0.3`，AvaloniaFluentUI 的版本是 `2.0.0`，最新版可能与文档会有所不同，请您依据实际情况进行调整。
+
 ## 通过 NuGet 安装
 
 推荐使用 NuGet 包管理器安装 Avalonia Fluent UI
@@ -21,6 +24,8 @@ Install-Package AvaloniaFluentUI
 ```
 
 ## 手动引用
+
+如需使用最新的的功能
 
 你也可以从 [GitHub Releases](https://github.com/HiyorinI/AvaloniaFluentUi) 下载最新的文件，然后手动添加到项目中。
 

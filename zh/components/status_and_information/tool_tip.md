@@ -15,9 +15,10 @@ permalink: /zh/components/status_and_information/tool_tip/
 
 ```xml
 <Button
-    Content="悬停显示工具提示"
-    ToolTip.Placement="Top"
-    ToolTip.VerticalOffset="-10">
-    <ToolTip.Tip>我是工具提示</ToolTip.Tip>
+  Width="256"
+  Content="悬停显示工具提示"
+  ToolTip.Placement="Top"
+  ToolTip.VerticalOffset="-5">
+  <ToolTip.Tip>我是工具提示</ToolTip.Tip>
 </Button>
 ```

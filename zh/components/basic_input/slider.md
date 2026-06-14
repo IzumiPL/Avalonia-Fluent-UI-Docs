@@ -12,7 +12,7 @@ permalink: /zh/components/basic_input/slider/
 </div>
 
 ```xml
- <ui:ToolTipSlider Maximum="100" Minimum="0"/>
+ <ui:ToolTipSlider Width="256" Maximum="100" Minimum="0"/>
  ```
 
  ## 范围滑动条 (RangeSlider)

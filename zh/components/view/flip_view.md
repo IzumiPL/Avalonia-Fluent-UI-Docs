@@ -15,14 +15,11 @@ permalink: /zh/components/view/flip_view/
 
 * 通过`DecodeToHeight`属性缩放到指定高度, 只能缩放一项, 建议缩放, 不然图片像素过高, 图片太多就会导致内存占用变高
 
-* 切换页面无需释放图片, 内部会自动处理内存
-
-* 切换页面无需释放图片, 内部会自动处理图片
+* 切换页面无需释放图片, 内部会自动处理图片释放
 
 * 可通过`Orientation`属性设置轮播方向, 默认垂直轮播, 可选值为`FlipOrientation.Horizontal`和`FlipOrientation.Vertical`
 
-* `AutoPlay`只有在加载到了视觉树后才会生效, 脱离视觉树自动停止自动播放
-
+* `AutoPlay`只有在加载到了视觉树后才会生效, 脱离视觉树自动停止自动播放, 如果脱离时是AutoPlay,再次挂载到视觉树会恢复播放
 
 ```xml
 <ui:FlipView

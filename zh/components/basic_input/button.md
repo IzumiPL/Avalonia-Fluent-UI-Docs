@@ -15,9 +15,9 @@ permalink: /zh/components/basic_input/button/
 </div>
 
 ```xml
-<ui:PushButton Content="标准按钮" IconData="{StaticResource Send}"/>
+<ui:PushButton Content="标准按钮" IconSource="{x:Static fi:FluentIcon.Send}"/>
 <ui:PushButton Classes="Accent" Content="主题色标准按钮"/>
-<ui:PushButton Content="透明标准按钮" Theme="{StaticResource TransparentPushButton}"/>
+<ui:PushButton Content="透明标准按钮" Classes="Transparent"/>
 ```
 
 ## 工具按钮 (ToolButton)
@@ -29,9 +29,9 @@ permalink: /zh/components/basic_input/button/
 </div>
 
 ```xml
-<ui:ToolButton IconData="{StaticResource GitHub}"/>
-<ui:ToolButton Classes="Accent" IconData="{StaticResource Send}"/>
-<ui:ToolButton IconData="{StaticResource Wifi}" Theme="{StaticResource TransparentToolButton}"/>
+<ui:ToolButton Content="{x:Static fi:FluentIcon.GitHub}"/>
+<ui:ToolButton Classes="Accent" Content="{x:Static fi:FluentIcon.Send}"/>
+<ui:ToolButton Content="{x:Static fi:FluentIcon.Wifi}" Classes="Transparent"/>
 ```
 
 ## 圆角按钮
@@ -44,7 +44,7 @@ permalink: /zh/components/basic_input/button/
 <ui:PushButton
       Classes="Round"
       Content="圆角按钮"
-      IconData="{StaticResource Send}"/>
+      IconSource="{StaticResource Send}"/>
     <ui:PushButton Classes="Accent Round" Content="主题色圆角按钮"/>
 ```
 
@@ -55,8 +55,8 @@ permalink: /zh/components/basic_input/button/
 </div>
 
 ```xml
-<ui:ToolButton Classes="Round" IconData="{StaticResource GitHub}"/>
-<ui:ToolButton Classes="Accent Round" IconData="{StaticResource Send}"/>
+<ui:ToolButton Classes="Round" Content="{x:Static fi:FluentIcon.GitHub}"/>
+<ui:ToolButton Classes="Accent Round" Content="{x:Static fi:FluentIcon.Send}"/>
 ```
 
 ## 轮廓按钮
@@ -68,8 +68,8 @@ permalink: /zh/components/basic_input/button/
 ```xml
 <ui:PushButton Classes="Outlined" Content="轮廓按钮"/>
 <ui:PushButton Classes="Outlined Round" Content="圆角轮廓按钮"/>
-<ui:ToolButton Classes="Outlined" IconData="{StaticResource Add}"/>
-<ui:ToolButton Classes="Outlined Round" IconData="{StaticResource Close}"/>
+<ui:ToolButton Classes="Outlined" Content="{x:Static fi:FluentIcon.Add}"/>
+<ui:ToolButton Classes="Outlined Round" Content="{x:Static fi:FluentIcon.Close}"/>
 ```
 
 ## 填充按钮 (FilledPushButton)
@@ -81,11 +81,27 @@ permalink: /zh/components/basic_input/button/
 </div>
 
 ```xml
-<ui:FilledPushButton Content="Information"/>
+<ui:FilledPushButton Content="Custom" Background="DarkOrange"/>
+<ui:FilledPushButton Content="Information" Classes="Information"/>
 <ui:FilledPushButton Classes="Success" Content="Success"/>
 <ui:FilledPushButton Classes="Attention" Content="Attention"/>
 <ui:FilledPushButton Classes="Warning" Content="Warning"/>
 <ui:FilledPushButton Classes="Error" Content="Error"/>
+```
+
+## 填充工具按钮 (FilledToolButton)
+
+<div align="center">
+  <img src="../../../public/img/filled_tool_button.png"  style="border-radius:12px;">
+</div>
+
+```xml
+<ui:FilledToolButton Content="{x:Static fi:FluentIcon.Game}" Background="DarkOrange"/>
+<ui:FilledToolButton Content="{x:Static fi:FluentIcon.Info}" Classes="Information"/>
+<ui:FilledToolButton Classes="Success" Content="{x:Static fi:FluentIcon.Sync}"/>
+<ui:FilledToolButton Classes="Attention" Content="{x:Static fi:FluentIcon.Send}"/>
+<ui:FilledToolButton Classes="Warning" Content="{x:Static fi:FluentIcon.GitHub}"/>
+<ui:FilledToolButton Classes="Error" Content="{x:Static fi:FluentIcon.Delete}"/>
 ```
 
 ## 描边按钮 (OutlinePushButton)
@@ -100,19 +116,19 @@ permalink: /zh/components/basic_input/button/
 <ui:OutlinePushButton
     Content="音乐"
     GroupName="Group1"
-    IconData="{StaticResource Music}"/>
+    IconSource="{x:Static fi:FluentIcon.Music}"/>
 <ui:OutlinePushButton
     Content="电影和电视"
     GroupName="Group1"
-    IconData="{StaticResource Video}"/>
+    IconSource="{x:Static fi:FluentIcon.Video}"/>
 <ui:OutlinePushButton
     Content="游戏"
     GroupName="Group2"
-    IconData="{StaticResource Game}"/>
+    IconSource="{x:Static fi:FluentIcon.Game}"/>
 <ui:OutlinePushButton
     Content="GitHub"
     GroupName="Group2"
-    IconData="{StaticResource GitHub}"/>
+    IconSource="{x:Static fi:FluentIcon.GitHub}"/>
 <ui:OutlinePushButton Content="关于我们"/>
 ```
 
@@ -124,9 +140,9 @@ permalink: /zh/components/basic_input/button/
 </div>
 
 ```xml
-<ui:OutlineToolButton IconData="{StaticResource Send}"/>
-<ui:OutlineToolButton IconData="{StaticResource Add}"/>
-<ui:OutlineToolButton IconData="{StaticResource Home}"/>
+<ui:OutlineToolButton IconSource="{x:Static fi:FluentIcon.Send}"/>
+<ui:OutlineToolButton IconSource="{x:Static fi:FluentIcon.Add}"/>
+<ui:OutlineToolButton IconSource="{x:Static fi:FluentIcon.Home}"/>
 ```
 
 ## 胶囊单选按钮
@@ -152,4 +168,44 @@ permalink: /zh/components/basic_input/button/
 <ui:SubTitleRadioButton Content="耳机" SubTitle="AirPods Pro 2"/>
 <ui:SubTitleRadioButton Content="控制器" SubTitle="Xbox Wireless Controller"/>
 <ui:SubTitleRadioButton Content="蓝牙" SubTitle="ProjectLuo M2"/>
+```
+
+## 下拉按钮 (DropDownButton)
+
+* 透明下拉按钮 `Classes="Transparent"`
+
+<div align="center">
+  <img src="../../../public/img/drop_down_button.png"  style="border-radius:12px;">
+</div>
+
+
+```xml
+<DropDownButton Width="256">
+  <Grid ColumnDefinitions="Auto, *" ColumnSpacing="8">
+    <PathIcon Data="{x:Static fi:FluentIcon.Mail}"/>
+    <TextBlock Grid.Column="1" Text="邮件"/>
+  </Grid>
+  <DropDownButton.Flyout>
+    <ui:FluentMenuFlyout>
+      <MenuItem Header="发送">
+        <MenuItem.Icon>
+          <PathIcon Data="{x:Static fi:FluentIcon.Send}"/>
+        </MenuItem.Icon>
+        <MenuItem.Items>
+          <MenuItem Header="删除"/>
+          <MenuItem Header="新建"/>
+        </MenuItem.Items>
+      </MenuItem>
+      <MenuItem Header="保存">
+        <MenuItem.Icon>
+          <PathIcon Data="{x:Static fi:FluentIcon.Save}"/>
+        </MenuItem.Icon>
+      </MenuItem>
+      <Separator HorizontalAlignment="Stretch"/>
+      <MenuItem Header="撤销"/>
+      <MenuItem Header="发送到"/>
+      <MenuItem Header="分享"/>
+    </ui:FluentMenuFlyout>
+  </DropDownButton.Flyout>
+</DropDownButton>
 ```

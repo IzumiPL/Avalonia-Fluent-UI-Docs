@@ -4,10 +4,163 @@ date: 2024-01-01 00:00:00
 permalink: /zh/components/layout/card/
 ---
 
-## 简单设置卡 (SettingsExpander)
+## 卡片 (Card)
+
+<div align="center">
+  <img src="/img/card.png"  style="border-radius:12px;">
+</div>
+
+* 卡片控件,Content可放任意内容
+
+```xml
+<ui:Card Width="512">
+      <SelectableTextBlock
+          HorizontalAlignment="Center"
+          VerticalAlignment="Center"
+          Text="卡片" />
+  </ui:Card>
+```
+
+## 简单卡片 (SimpleCard)
+
+<div align="center">
+  <img src="/img/simples_card.png"  style="border-radius:12px;">
+</div>
+
+* 和卡片控件不同的是, 他会随鼠标进入变化
+
+```xml
+<ui:SimpleCard>
+    <TextBlock
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Text="简单卡片, 鼠标进入改变样式" />
+</ui:SimpleCard>
+<ui:SimpleCard Classes="Outlined">
+    <TextBlock
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Text="简单卡片, 鼠标进入改变样式 (Outlined Style)" />
+</ui:SimpleCard>
+```
+
+
+## 带标题的卡片 (HeaderCard)
+
+<div align="center">
+  <img src="/img/header_card.png"  style="border-radius:12px;">
+</div>
+
+```xml
+<ui:HeaderCard Header="系统要求">
+  <Panel Height="52">
+      <Panel
+          Width="18"
+          Height="18"
+          HorizontalAlignment="Left"
+          VerticalAlignment="Top">
+          <Ellipse
+              Name="IconBackground"
+              Width="18"
+              Height="18"
+              VerticalAlignment="Top"
+              Fill="{DynamicResource SystemFillColorSuccessBrush}" />
+          <ui:FontIcon
+              Width="18"
+              Height="18"
+              VerticalAlignment="Top"
+              FontFamily="{StaticResource SymbolThemeFontFamily}"
+              FontSize="10"
+              Foreground="{DynamicResource TextFillColorInverseBrush}"
+              Glyph="&#xE10B;" />
+      </Panel>
+      <SelectableTextBlock
+          Margin="24,0,0,0"
+          VerticalAlignment="Top"
+          Text="此产品适用于你的设备。具有复选标记的项目符合开发" />
+      <HyperlinkButton
+          Margin="-11,0,0,0"
+          VerticalAlignment="Bottom"
+          Content="详细信息" />
+  </Panel>
+</ui:HeaderCard>
+```
+
+## ElevatedCard (ElevatedCard)
+
+<div align="center">
+  <img src="/img/elevated_card.png"  style="border-radius:12px;">
+</div>
+
+* `ElevatedCard`是带阴影的卡片,鼠标移入时会显示阴影和上移动画
+
+```xml
+<ui:ElevatedCard Width="256" Height="256">
+  <Panel>
+    <TextBlock
+      HorizontalAlignment="Center"
+      VerticalAlignment="Center"
+      FontSize="86"
+      Text="🥰" />
+    <TextBlock
+      HorizontalAlignment="Center"
+      VerticalAlignment="Bottom"
+      Classes="SubTitle"
+      Text="Kiss" />
+  </Panel>
+</ui:ElevatedCard>
+<ui:ElevatedCard Width="256" Height="256">
+  <Panel>
+    <TextBlock
+      HorizontalAlignment="Center"
+      VerticalAlignment="Center"
+      FontSize="86"
+      Text="🥵" />
+    <TextBlock
+      HorizontalAlignment="Center"
+      VerticalAlignment="Bottom"
+      Classes="SubTitle"
+      Text="Kiss" />
+  </Panel>
+</ui:ElevatedCard>
+<ui:ElevatedCard Width="256" Height="256">
+  <Panel>
+    <TextBlock
+      HorizontalAlignment="Center"
+      VerticalAlignment="Center"
+      FontSize="86"
+      Text="😭" />
+    <TextBlock
+      HorizontalAlignment="Center"
+      VerticalAlignment="Bottom"
+      Classes="SubTitle"
+      Text="Kiss" />
+  </Panel>
+</ui:ElevatedCard>
+```
+
+## 设置卡 (SettingCard)
 
 <div align="center">
   <img src="/img/setting_card.png"  style="border-radius:12px;">
+</div>
+
+```xml
+<ui:SettingCard
+    Description="我是设置卡的描述"
+    Header="自定义图片的设置卡"
+    IconSource="avares://Temp/Assets/Terminal.png" />
+<ui:SettingCard
+    Description="我是设置卡的描述"
+    Header="Fluent Icon"
+    IconSource="{x:Static fi:FluentIcon.GitHub}" />
+<ui:SettingCard Description="H我是设置卡的描述" Header="没有图标的设置卡" />
+```
+
+## 可点击的设置卡 (SettingsExpander)
+
+<div align="center">
+  <img src="/img/clicked_setting_expander_card.png"  style="border-radius:12px;">
 </div>
 
 ```xml
@@ -15,14 +168,8 @@ permalink: /zh/components/layout/card/
     ActionIconSource="ChevronRight"
     Description="设置当前系统的音量"
     Header="音量"
-    IconSource="M24 28.313q0-0.266 0.102-0.43t0.273-0.352q0.219-0.219 0.469-0.414t0.484-0.414q1.125-1.031 2-2.289t1.469-2.664 0.898-2.906 0.305-3.016q0-1.5-0.305-3.008t-0.906-2.922-1.469-2.68-1.992-2.281q-0.234-0.219-0.484-0.414t-0.469-0.414q-0.188-0.188-0.281-0.344t-0.094-0.438q0-0.422 0.289-0.703t0.711-0.281q0.188 0 0.328 0.055t0.297 0.164q0.703 0.453 1.391 1.156t1.305 1.508 1.133 1.648 0.875 1.594q0.828 1.734 1.25 3.586t0.422 3.773q0 1.906-0.422 3.773t-1.25 3.586q-0.359 0.734-0.875 1.586t-1.141 1.656-1.313 1.508-1.375 1.156q-0.172 0.109-0.305 0.164t-0.32 0.055q-0.406 0-0.703-0.297t-0.297-0.703zM6.594 21.828h-3.594q-0.609 0-1.156-0.234t-0.961-0.648-0.648-0.961-0.234-1.156v-6q0-0.609 0.234-1.156t0.648-0.961 0.961-0.648 1.156-0.234h3.594l4.844-4.859q0.219-0.219 0.492-0.32t0.57-0.102q0.641 0 1.070 0.422t0.43 1.063v19.594q0 0.313-0.117 0.578t-0.328 0.477-0.484 0.328-0.57 0.117q-0.625 0-1.063-0.438l-4.844-4.859zM20.063 24.719q0-0.266 0.086-0.406t0.258-0.344q0.859-0.969 1.531-1.859t1.125-1.836 0.695-2.023 0.242-2.422-0.242-2.422-0.695-2.023-1.125-1.836-1.531-1.859q-0.172-0.203-0.258-0.344t-0.086-0.406q0-0.406 0.305-0.695t0.711-0.289q0.234 0 0.359 0.055t0.313 0.195q0.469 0.359 0.93 0.883t0.875 1.117 0.758 1.211 0.578 1.164q1.109 2.5 1.109 5.25t-1.109 5.25q-0.219 0.5-0.57 1.133t-0.773 1.25-0.883 1.148-0.914 0.844q-0.172 0.109-0.32 0.18t-0.352 0.070q-0.406 0-0.711-0.289t-0.305-0.695zM12 24.406v-17.172l-4.297 4.297q-0.297 0.297-0.703 0.297h-4q-0.406 0-0.703 0.297t-0.297 0.703v6q0 0.406 0.297 0.703t0.703 0.297h4q0.406 0 0.703 0.297l4.297 4.281zM16.188 20.906q0-0.219 0.055-0.344t0.18-0.297q0.359-0.547 0.656-1.055t0.5-1.031 0.313-1.094 0.109-1.258q0-0.672-0.109-1.25t-0.313-1.102-0.5-1.031-0.656-1.055q-0.125-0.172-0.18-0.297t-0.055-0.344q0-0.406 0.297-0.703t0.703-0.297q0.266 0 0.438 0.094t0.344 0.281q0.5 0.547 0.875 1.227t0.633 1.438 0.391 1.539 0.133 1.5q0 0.688-0.133 1.477t-0.391 1.563-0.641 1.469-0.867 1.195q-0.328 0.359-0.781 0.359-0.406 0-0.703-0.289t-0.297-0.695z">
-    <ui:SettingsExpander.Footer>
-    <ui:ToolTipSlider
-        Width="168"
-        MinHeight="0"
-        MaxHeight="100"
-        Value="32"/>
-    </ui:SettingsExpander.Footer>
+    IsClickEnabled="True"
+    IconSource="{x:Static fi:FluentIcon.Volume}">
 </ui:SettingsExpander>
 ```
 

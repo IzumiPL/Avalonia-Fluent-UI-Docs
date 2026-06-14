@@ -13,7 +13,7 @@ permalink: /zh/components/text/text_box/
 </div>
 
 ```xml
-<TextBox Width="256" Watermark="请输入文本"/>
+<TextBox Width="328" PlaceholderText="请输入文本"/>
 ```
 
 ## 带清空按钮的文本输入框
@@ -25,7 +25,7 @@ permalink: /zh/components/text/text_box/
 
 
 ```xml
-<TextBox Width="256" Watermark="请输入文本" Class="Clear"/>
+<TextBox Width="328" PlaceholderText="请输入文本" Classes="Clear"/>
 ```
 
 ## 密码输入框
@@ -38,10 +38,10 @@ permalink: /zh/components/text/text_box/
 
 ```xml
 <TextBox
-    Width="256"
+    Width="328"
     Classes="Password"
     PasswordChar="*"
-    Watermark="请输入密码"/>
+    PlaceholderText="请输入密码"/>
 ```
 
 
@@ -56,7 +56,23 @@ permalink: /zh/components/text/text_box/
 
 ```xml
 <ui:SearchTextBox
-    Width="256"
+    Width="328"
     IsReturnSearch="True"
-    Watermark="请输入要搜索的文本"/>
+    PlaceholderText="请输入要搜索的文本"/>
+```
+
+## 带标签的输入框
+
+<div align="center">
+  <img src="/img/label_text_box.png" style="border-radius:12px;">
+</div>
+
+* 可通过设置 `Prefix` 和 `Suffix` 来指定前后标签
+
+```xml
+<ui:LabelTextBox
+  Width="328"
+  PlaceholderText="请输入网址"
+  Prefix="https://"
+  Suffix=".com" />
 ```

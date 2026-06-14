@@ -54,6 +54,7 @@ export default defineConfig({
                         { text: '对话框', link: '/zh/components/dialog/dialog' },
                         { text: '颜色选择器', link: '/zh/components/dialog/color_picker' },
                         { text: '弹出组件', link: '/zh/components/dialog/flyout' },
+                        { text: '气泡弹窗', link: '/zh/components/dialog/teaching_tip' },
                     ]
                 },
                 {
@@ -81,6 +82,7 @@ export default defineConfig({
                     text: '状态和信息',
                     items: [
                         { text: '信息徽章', link: '/zh/components/status_and_information/info_badge' },
+                        { text: '消息条', link: '/zh/components/status_and_information/info_bar' },
                         { text: '进度条', link: '/zh/components/status_and_information/progress_bar' },
                         { text: '进度环', link: '/zh/components/status_and_information/progress_ring' },
                         { text: '工具提示', link: '/zh/components/status_and_information/tool_tip' },
