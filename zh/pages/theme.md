@@ -48,13 +48,13 @@ FluentAvaliniaTheme.Instance.CurrentTheme = ThemeVariant.Light;
 
 ```csharp
 // 订阅主题更改事件
-FluentAvaloniaTheme.ThemeChanged += (_, theme) =>
+FluentAvaloniaTheme.Instance.ThemeChanged += (_, theme) =>
 {
     Console.WriteLine($"当前主题: {theme}")
 };
 
 // 订阅主题色更改事件
-FluentAvaloniaTheme.ThemeColorChanged += (_, color) =>
+FluentAvaloniaTheme.Instance.ThemeColorChanged += (_, color) =>
 {
     Console.WriteLine($"当前主题色: {color}")
 };

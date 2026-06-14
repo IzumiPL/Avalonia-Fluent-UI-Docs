@@ -9,27 +9,38 @@ permalink: /zh/pages/changelog/
 ## v2.0.0
 
 * 更新Avalonia版本到12.0.3
+* 修复了一些已知问题
 
-> nuget版本为1.0.3(Avalonia-11.3.4), 如需使用Avalonia-12版本,请从GitHub获取源码构建
+#### 添加控件
 
+* [LabelTextBox](/zh/components/text/text_box.md#带标签的输入框)
+* [FilledToolButton](/zh/components/basic_input/button.md#填充工具按钮-filledtoolbutton)
+* [Card](/zh/components/layout/card.md#卡片-card)
+* [SimpleCard](/zh/components/layout/card.md#简单卡片-simplecard)
+* [HeaderCard](/zh/components/layout/card.md#带标题的卡片-headercard)
+* [ElevatedCard](/zh/components/layout/card.md#elevatedcard-elevatedcard)
+* [SettingCard](/zh/components/layout/card.md#可点击的设置卡-settingsexpander)
+
+### 添加样式
+
+* [ChipsRadioButton](/zh/components/basic_input/button.md#胶囊单选按钮)
 
 ## v1.0.3
-* ...
 
 
 ## v1.0.1
 
-### 添加了一新组件
-* [FlipView](/zh/components/view/flip_view.md)
-* [SingleDirectionScrollViewer](/zh/components/scroll/smooth_scroll.md)
+#### 添加了一新控件
+* [FlipView](/zh/components/view/flip_view.md#翻转视图-flipview)
+* [SingleDirectionScrollViewer](/zh/components/scroll/smooth_scroll.md#平滑滚动区域-smoothscrollviewer)
 * PipsPager
-* [ToolTipSlider](/zh/components/basic_input/slider.md)
-* [RoundListBox](/zh/components/view/list_box.md)
-* [SubTitleRadioButton](/zh/components/basic_input/button.md)
-* [OutlinePushButton | OutlineToolButton](/zh/components/basic_input/button.md)
-* [FilledPushButton](/zh/components/basic_input/button.md)
-* [SegmentedView | SegmentedToggleView](/zh/components/navigation/top_navigation.md)
-* [MulitSelectionComboBox](/zh/components/basic_input/combobox.md)
+* [ToolTipSlider](/zh/components/basic_input/slider.md#带工具提示的滑动条-tooltipslider)
+* [RoundListBox](/zh/components/view/list_box.md#圆角列表-roundedlistbox)
+* [SubTitleRadioButton](/zh/components/basic_input/button.md#带子标题的单选按钮-subtitleradiobutton)
+* [OutlinePushButton | OutlineToolButton](/zh/components/basic_input/button.md#描边按钮-outlinepushbutton)
+* [FilledPushButton](/zh/components/basic_input/button.md#填充按钮-filledpushbutton)
+* [SegmentedView | SegmentedToggleView](/zh/components/navigation/top_navigation.md#分段导航视图-segmentedview)
+* [MulitSelectionComboBox](/zh/components/basic_input/combobox.md#多选下拉框-multiselectioncombobox)
  
 ### 样式
 * PushButton, ToolButton添加`Round` `Accent Round` `Outlined` `Round Outlined`样式
