@@ -19,6 +19,24 @@ permalink: /zh/components/navigation/navigation_view/
 * LeftCompact 侧边导航在左侧显示，压缩为图标和文本
 * LeftMinimal 侧边导航在左侧显示，仅显示返回和展开图标
 
+### 属性
+* `OpenPaneLength` 面板展开时的宽度
+* `CompactPanLength` 面板折叠时的宽度
+* `PanFooter` 面板底部自定义的内容
+* `PanHeader` 面板头部自定义的内容
+* `PaneTitle` 面板标题
+* `Content` 内容区
+* `IsSettingsVisible` 是否显示设置项, 设置项的`Tag`默认是`Settings`
+* `IsBackButtonVisible` 是否显示返回按钮
+* `IsBackEnabled` 返回按钮是否启用
+* `IsPanOpen` 面板是否展开
+* `DisplayMode` 显示模式`只读`
+* `PanDisplayMode` 面板显示模式
+* `SelectedItem` 当前选中的Item
+* `FooterMenuItems` 底部菜单项
+* `MenuItems` 左侧导航菜单项
+
+
 #### 通过 `NavigationViewItemSeparator` 添加分隔线
 #### 可在`AutoCompleteBox`中放入输入框, 用于搜索导航项, 未展开导航栏时自动显示为搜索图标
 #### 在`NavigationItem`里添加标题使用`NavigationViewItemHeader`
