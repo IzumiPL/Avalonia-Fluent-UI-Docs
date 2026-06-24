@@ -18,8 +18,8 @@ permalink: /zh/pages/changelog/
 * [ShortcutKeyPicker](/zh/components/pickers/shortcut_key_picker.md#快捷键选择器-shortcutkeypicker)
 * [HyperlinkLabel]
 * [Avatar](/zh/components/view/avatar.md#头像-avatar)
-* [FileDropPicker](/zh/components/view/file_folder_drop_picker.md#文件选择器-filedroppicker)
-* [FolderDropPicker](/zh/components/view/file_folder_drop_picker.md#文件夹选择器-folderdroppicker)
+* [FileDropPicker](/zh/components/pickers/file_folder_drop_picker.md#文件选择器-filedroppicker)
+* [FolderDropPicker](/zh/components/pickers/file_folder_drop_picker.md#文件夹选择器-folderdroppicker)
 
 ## v2.0.0
 
