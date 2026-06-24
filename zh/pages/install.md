@@ -11,7 +11,7 @@ permalink: /zh/pages/install/
 
 ## 通过 NuGet 安装
 
-推荐使用 NuGet 包管理器安装 Avalonia Fluent UI
+使用 NuGet 包管理器安装 Avalonia Fluent UI
 
 ```bash
 dotnet add package AvaloniaFluentUI
@@ -70,5 +70,5 @@ xmlns:fluent="using:AvaloniaFluentUI.Controls"
 ## 系统要求
 
 - .NET 10.0 或更高版本
-- Avalonia UI 11.3.12
+- Avalonia UI 12.0.3(11.*.\*版本可使用avalonia11.3.12分支)
 - Windows 10/11, macOS, 或 Linux

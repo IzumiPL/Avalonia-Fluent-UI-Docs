@@ -96,10 +96,24 @@ export default defineConfig({
                     ]
                 },
                 {
+                    text: '选择器',
+                    items: [
+                        {text: '快捷键选择器', link: '/zh/components/pickers/shortcut_key_picker'},
+                        {text: '文件 | 文件夹选择器', link: '/zh/components/pickers/file_folder_drop_picker'},
+                    ]
+                },
+                {
                     text: '视图',
                     items: [
                         { text: '翻转视图', link: '/zh/components/view/flip_view' },
                         { text: '列表', link: '/zh/components/view/list_box' },
+                        { text: '头像', link: '/zh/components/view/avatar' },
+                    ]
+                },
+                {
+                    text: '字体',
+                    items: [
+                        { text: '字体', link: '/zh/components/font/font' },
                     ]
                 },
                 {

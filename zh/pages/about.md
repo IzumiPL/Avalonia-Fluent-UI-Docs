@@ -12,11 +12,11 @@ Avalonia Fluent UI 是一个基于 Avalonia UI 框架的 Fluent Design 风格组
 
 - 🎨 **Fluent Design 风格** - Fluent Design 设计规范，提供现代化的视觉体验
 - 🌓 **主题支持** - 完美支持亮色和暗色主题切换
-- 📱 **跨平台** - 支持 Windows、Linux、 MacOS, iOS、Android 和 WebAssembly(MacOS, IOS, Android, WebAssembly支持不是很好)
+- 📱 **跨平台** - 支持 Windows、Linux、 MacOS
 
 ## 技术栈
 
-- **框架**: Avalonia UI 11.3.12
+- **框架**: Avalonia UI 12.0.3
 - **语言**: C# .NET 10+
 - **设计风格**: Microsoft Fluent Design
 - **许可证**: MIT

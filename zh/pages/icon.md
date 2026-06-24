@@ -26,7 +26,7 @@ xmlns:fi="clr-namespace:AvaloniaFluentUI.Icons;assembly=AvaloniaFluentUI"
 使用 Windows 的 Segoe Fluent Icons 字体：
 
 ```xml
-<TextBlock Text="&#xE74E;" FontFamily="Segoe Fluent Icons"/>
+<TextBlock Text="&#xE74E;" FontFamily="{StaticResource DefaultFontFamily}"/>
 ```
 
 ### 3. 自定义图标

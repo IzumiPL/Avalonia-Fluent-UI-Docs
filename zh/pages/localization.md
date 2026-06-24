@@ -20,6 +20,8 @@ LocalizationService.Instance;
 LocalizationService.Instance.SetCulture("zh-CN");
 
 ```
+> [!Note]
+> `LoadResxFile` `LoadResxDirectory`默认只加载当前语言的文件,语言改变后会自动加载对应的文件
 
 默认内置控件暂只支持`en-US` `zh-CN` `ja-JP`三种翻译, 可添加自定义翻译语言,添加方法:
 ```csharp

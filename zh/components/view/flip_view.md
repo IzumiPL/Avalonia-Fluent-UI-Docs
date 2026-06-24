@@ -17,7 +17,7 @@ permalink: /zh/components/view/flip_view/
 
 * 切换页面无需释放图片, 内部会自动处理图片释放
 
-* 可通过`Orientation`属性设置轮播方向, 默认垂直轮播, 可选值为`FlipOrientation.Horizontal`和`FlipOrientation.Vertical`
+* 可通过`Orientation`属性设置轮播方向, 默认水平轮播, 可选值为`FlipOrientation.Horizontal`和`FlipOrientation.Vertical`
 
 * `AutoPlay`只有在加载到了视觉树后才会生效, 脱离视觉树自动停止自动播放, 如果脱离时是AutoPlay,再次挂载到视觉树会恢复播放
 

@@ -6,6 +6,21 @@ permalink: /zh/pages/changelog/
 
 # 更新日志
 
+## v2.0.1
+
+* 添加默认字体
+* `MultSelectionComboBox`支持Content属性
+* `ProgressRing`添加显示百分比属性
+* `NavigationView` `NavigationViewItem` 添加样式 `MSNavigationView` `MSNavigationViewItem` 
+
+#### 新增控件
+* [ShortcutKeyPanel](/zh/components/pickers/shortcut_key_picker#快捷键面板-shortcutkeypanel)
+* [ShortcutKeyPicker](/zh/components/pickers/shortcut_key_picker.md#快捷键选择器-shortcutkeypicker)
+* [HyperlinkLabel]
+* [Avatar](/zh/components/view/avatar.md#头像-avatar)
+* [FileDropPicker](/zh/components/view/file_folder_drop_picker.md#文件选择器-filedroppicker)
+* [FolderDropPicker](/zh/components/view/file_folder_drop_picker.md#文件夹选择器-folderdroppicker)
+
 ## v2.0.0
 
 * 更新Avalonia版本到12.0.3
@@ -20,10 +35,6 @@ permalink: /zh/pages/changelog/
 * [HeaderCard](/zh/components/layout/card.md#带标题的卡片-headercard)
 * [ElevatedCard](/zh/components/layout/card.md#elevatedcard-elevatedcard)
 * [SettingCard](/zh/components/layout/card.md#可点击的设置卡-settingsexpander)
-
-### 添加样式
-
-* [ChipsRadioButton](/zh/components/basic_input/button.md#胶囊单选按钮)
 
 ## v1.0.3
 
