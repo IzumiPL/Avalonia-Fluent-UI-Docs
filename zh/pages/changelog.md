@@ -6,6 +6,11 @@ permalink: /zh/pages/changelog/
 
 # 更新日志
 
+## v2.0.2
+
+* 修改`AppWindow`为 [FluentWindow](/zh/components/window/fluent_window)
+* 删除了一些不必要的资源
+
 ## v2.0.1
 
 * 添加默认字体

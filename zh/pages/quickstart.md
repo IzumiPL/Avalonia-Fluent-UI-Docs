@@ -22,7 +22,7 @@ dotnet add package AvaloniaFluentUI
              xmlns:fluent="using:AvaloniaFluentUI.Styling"
              x:Class="MyFluentApp.App">
     <Application.Styles>
-        <fluent:FluentAvaloniaTheme />
+        <fluent:AvaloniaFluentTheme />
     </Application.Styles>
 </Application>
 ```
@@ -30,7 +30,7 @@ dotnet add package AvaloniaFluentUI
 ### 修改 MainWindow.axaml
 
 ```xml
-<wd:AppWindow xmlns="https://github.com/avaloniaui"
+<wd:FluentWindow xmlns="https://github.com/avaloniaui"
                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                      xmlns:wd="using:AvaloniaFluentUI.Windoning"
                      xmlns:ui="using:AvaloniaFluentUI.Controls"
@@ -50,7 +50,7 @@ dotnet add package AvaloniaFluentUI
                         Message="这是一个 InfoBar 控件"
                         Severity="Informational"/>
     </StackPanel>
-</wd:AppWindow>
+</wd:FluentWindow>
 ```
 
 ## 运行应用
@@ -69,4 +69,4 @@ dotnet run
 
 ## 示例代码
 
-完整的示例代码可以在 [GitHub 仓库](https://github.com/HiyorinI/AvaloniaFluentUi) 中找到。
+完整的示例代码可以在 [GitHub 仓库](https://github.com/IzumiPL/Avalonia-Fluent-UI) 中找到。

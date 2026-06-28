@@ -119,7 +119,7 @@ export default defineConfig({
                 {
                     text: '窗口',
                     items: [
-                        { text: 'Fluent Window', link: '/zh/components/window/app_window' },
+                        { text: '无边框窗口', link: '/zh/components/window/fluent_window' },
                     ]
                 },
             ]

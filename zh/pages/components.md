@@ -53,4 +53,4 @@ Avalonia Fluent UI 提供了丰富的 UI 控件，按照功能分类如下：
 
 ## 窗口
 
-- [Fluent Window (AppWindow)](/zh/components/window/app_window)
+- [无边框窗口 (FluentWindow)](/zh/components/window/fluent_window)
