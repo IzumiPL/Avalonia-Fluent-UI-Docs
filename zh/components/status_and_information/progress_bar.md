@@ -21,3 +21,18 @@ permalink: /zh/components/status_and_information/progress_bar/
     Minimum="0"
     Value="50"/>
 ```
+## 填充进度条 (FilledProgressBar)
+
+<div align="center">
+  <img src="/img/filled_progress_bar.png" style="border-radius:12px;">
+</div>
+
+* 设置`ShowProgressText`显示进度百分比
+
+```xml
+<ui:FilledProgressBar
+  HorizontalAlignment="Center"
+  Maximum="256"
+  Minimum="0"
+  Value="64"/>
+```

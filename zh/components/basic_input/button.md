@@ -113,27 +113,63 @@ permalink: /zh/components/basic_input/button/
 </div>
 
 ```xml
-<ui:OutlinePushButton
+<StackPanel Orientation="Horizontal" Spacing="8">
+  <ui:OutlinePushButton
     Content="音乐"
-    GroupName="Group1"
-    IconSource="{x:Static fi:FluentIcon.Music}"/>
-<ui:OutlinePushButton
+    Group="{Binding MainGroup}"
+    IconSource="{x:Static fi:FluentIcon.Music}"
+    Tag="Music"/>
+  <ui:OutlinePushButton
     Content="电影和电视"
-    GroupName="Group1"
-    IconSource="{x:Static fi:FluentIcon.Video}"/>
-<ui:OutlinePushButton
+    Group="{Binding MainGroup}"
+    IconSource="{x:Static fi:FluentIcon.Video}"
+    Tag="Video"/>
+  <ui:OutlinePushButton
     Content="游戏"
-    GroupName="Group2"
-    IconSource="{x:Static fi:FluentIcon.Game}"/>
-<ui:OutlinePushButton
+    Group="{Binding MainGroup}"
+    IconSource="{x:Static fi:FluentIcon.Game}"
+    Tag="Game"/>
+  <ui:OutlinePushButton
     Content="GitHub"
-    GroupName="Group2"
-    IconSource="{x:Static fi:FluentIcon.GitHub}"/>
-<ui:OutlinePushButton Content="关于我们"/>
+    Group="{Binding MainGroup}"
+    IconSource="{x:Static fi:FluentIcon.GitHub}"
+    Tag="GitHub"/>
+  <ui:OutlinePushButton
+    Content="关于我们"
+    Group="{Binding MainGroup}"
+    Tag="About"/>
+</StackPanel>
+```
+
+```csharp
+
+public OutlineButtonGroup MainGroup { get; } = new OutlineButtonGroup();
+
+// 设置选择模式
+MainGroup.SelectionMode = OutlineButtonSelectionMode.Multiple;
+
+MainGroup.SelectionChanged += g =>
+{
+    if (g.SelectionMode == OutlineButtonSelectionMode.Single)
+    {
+        Console.WriteLine($"Single Selected Item: {g.SelectedItem.Tag}");
+    }
+    else
+    {
+        foreach (var btn in g.SelectedItems)
+        {
+            Console.WriteLine($"Multiple Selected Item: {btn.Tag}");
+        }
+    }
+};
+
+
 ```
 
 
 ## 描边工具按钮 (OutlinedToolButton)
+
+* 使用方法和 `OutlinedPushButton`一致
 
 <div align="center">
   <img src="../../../public/img/outline_tool_button.png"  style="border-radius:12px;">

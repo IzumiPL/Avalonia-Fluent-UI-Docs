@@ -35,8 +35,6 @@ ListBox.ItemsSource = items;
     <img src="/img/round_list_box.png" style="border-radius:12px;">
 </div>
 
-* 双击列表项可编辑内容, 回车保存
-
 ```xml
  <ui:RoundListBox
 Name="RoundListBox"
