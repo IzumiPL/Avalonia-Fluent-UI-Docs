@@ -6,6 +6,21 @@ permalink: /zh/pages/changelog/
 
 # 更新日志
 
+## v2.0.3
+
+* 优化了弹出控件的阴影效果
+* 修改了[OutlineButton](/zh/components/basic_input/button.md#描边按钮-outlinepushbutton)的选中逻辑
+* Avalonia版本升级到`12.0.5`
+
+
+#### 新增控件
+* [ColorDialog](/zh/components/dialog/color_picker.md#颜色选则器对话框-colordialog)
+* [ColorPickerButton](/zh/components/dialog/color_picker.md#颜色选择按钮-colorpickerbutton)
+* [FilledProgressBar](/zh/components/status_and_information/progress_bar.md#填充进度条-filledprogressbar)
+* InfoBarHost
+* [PopupInfoBar](/zh/components/status_and_information/info_bar.md#可以弹出消息条-popupinfobar)
+* [ToastInfoBar](/zh/components/status_and_information/info_bar.md#toast信息条-toastinfobar)
+
 ## v2.0.2
 
 * 修改`AppWindow`为 [FluentWindow](/zh/components/window/fluent_window)
@@ -21,7 +36,7 @@ permalink: /zh/pages/changelog/
 #### 新增控件
 * [ShortcutKeyPanel](/zh/components/pickers/shortcut_key_picker#快捷键面板-shortcutkeypanel)
 * [ShortcutKeyPicker](/zh/components/pickers/shortcut_key_picker.md#快捷键选择器-shortcutkeypicker)
-* [HyperlinkLabel]
+* HyperlinkLabel
 * [Avatar](/zh/components/view/avatar.md#头像-avatar)
 * [FileDropPicker](/zh/components/pickers/file_folder_drop_picker.md#文件选择器-filedroppicker)
 * [FolderDropPicker](/zh/components/pickers/file_folder_drop_picker.md#文件夹选择器-folderdroppicker)
