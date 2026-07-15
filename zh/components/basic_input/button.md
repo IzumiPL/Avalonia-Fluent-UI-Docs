@@ -176,9 +176,9 @@ MainGroup.SelectionChanged += g =>
 </div>
 
 ```xml
-<ui:OutlineToolButton IconSource="{x:Static fi:FluentIcon.Send}"/>
-<ui:OutlineToolButton IconSource="{x:Static fi:FluentIcon.Add}"/>
-<ui:OutlineToolButton IconSource="{x:Static fi:FluentIcon.Home}"/>
+<ui:OutlineToolButton Content="{x:Static fi:FluentIcon.Send}"/>
+<ui:OutlineToolButton Content="{x:Static fi:FluentIcon.Add}"/>
+<ui:OutlineToolButton Content="{x:Static fi:FluentIcon.Home}"/>
 ```
 
 ## 胶囊单选按钮

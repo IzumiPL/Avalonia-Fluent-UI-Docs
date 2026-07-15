@@ -108,6 +108,7 @@ export default defineConfig({
                         { text: '翻转视图', link: '/zh/components/view/flip_view' },
                         { text: '列表', link: '/zh/components/view/list_box' },
                         { text: '头像', link: '/zh/components/view/avatar' },
+                        { text: '向导视图', link: '/zh/components/view/wizard_view' },
                     ]
                 },
                 {

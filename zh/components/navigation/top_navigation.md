@@ -14,26 +14,26 @@ permalink: /zh/components/navigation/top_navigation/
 
 ```xml
 <ui:SegmentedView SelectedIndex="0">
-    <ui:SegmentedItem Content="主页" IsSelected="True"/>
-    <ui:SegmentedItem Content="文件"/>
-    <ui:SegmentedItem>
+  <ui:SegmentedItem Content="主页" IsSelected="True"/>
+  <ui:SegmentedItem Content="文件"/>
+  <ui:SegmentedItem>
     <Grid ColumnDefinitions="*, *" ColumnSpacing="5">
-        <PathIcon Data="{StaticResource View}"/>
-        <TextBlock Grid.Column="1" Text="视图"/>
+      <PathIcon Data="{x:Static fi:FluentIcon.Video}"/>
+      <TextBlock Grid.Column="1" Text="视图"/>
     </Grid>
-    </ui:SegmentedItem>
-    <ui:SegmentedItem Content="视频历史"/>
-    <ui:SegmentedItem Content="音频历史"/>
-    <ui:SegmentedItem Content="浏览历史"/>
-    <ui:SegmentedItem Content="帮助"/>
-    <ui:SegmentedItem Content="设置"/>
-    <ui:SegmentedItem Content="关于"/>
-    <ui:SegmentedItem>
+  </ui:SegmentedItem>
+  <ui:SegmentedItem Content="视频历史"/>
+  <ui:SegmentedItem Content="音频历史"/>
+  <ui:SegmentedItem Content="浏览历史"/>
+  <ui:SegmentedItem Content="帮助"/>
+  <ui:SegmentedItem Content="设置"/>
+  <ui:SegmentedItem Content="关于"/>
+  <ui:SegmentedItem>
     <Grid ColumnDefinitions="*, *" ColumnSpacing="5">
-        <PathIcon Data="{StaticResource Send}"/>
-        <TextBlock Grid.Column="1" Text="发送"/>
+      <PathIcon Data="{x:Static fi:FluentIcon.Send}"/>
+      <TextBlock Grid.Column="1" Text="发送"/>
     </Grid>
-    </ui:SegmentedItem>
+  </ui:SegmentedItem>
 </ui:SegmentedView>
 ```
 
@@ -47,26 +47,26 @@ permalink: /zh/components/navigation/top_navigation/
 
 ```xml
 <ui:SegmentedToggleView SelectedIndex="0">
-    <ui:SegmentedItem Content="主页" IsSelected="True"/>
-    <ui:SegmentedItem Content="文件"/>
-    <ui:SegmentedItem>
+  <ui:SegmentedItem Content="主页" IsSelected="True"/>
+  <ui:SegmentedItem Content="文件"/>
+  <ui:SegmentedItem>
     <Grid ColumnDefinitions="*, *" ColumnSpacing="5">
-        <PathIcon Data="{StaticResource View}"/>
-        <TextBlock Grid.Column="1" Text="视图"/>
+      <PathIcon Data="{x:Static fi:FluentIcon.View}"/>
+      <TextBlock Grid.Column="1" Text="视图"/>
     </Grid>
-    </ui:SegmentedItem>
-    <ui:SegmentedItem Content="视频历史"/>
-    <ui:SegmentedItem Content="音频历史"/>
-    <ui:SegmentedItem Content="浏览历史"/>
-    <ui:SegmentedItem Content="帮助"/>
-    <ui:SegmentedItem Content="设置"/>
-    <ui:SegmentedItem Content="关于"/>
-    <ui:SegmentedItem>
+  </ui:SegmentedItem>
+  <ui:SegmentedItem Content="视频历史"/>
+  <ui:SegmentedItem Content="音频历史"/>
+  <ui:SegmentedItem Content="浏览历史"/>
+  <ui:SegmentedItem Content="帮助"/>
+  <ui:SegmentedItem Content="设置"/>
+  <ui:SegmentedItem Content="关于"/>
+  <ui:SegmentedItem>
     <Grid ColumnDefinitions="*, *" ColumnSpacing="5">
-        <PathIcon Data="{StaticResource Send}"/>
-        <TextBlock Grid.Column="1" Text="发送"/>
+      <PathIcon Data="{x:Static fi:FluentIcon.Send}"/>
+      <TextBlock Grid.Column="1" Text="发送"/>
     </Grid>
-    </ui:SegmentedItem>
+  </ui:SegmentedItem>
 </ui:SegmentedToggleView>
 ```
 

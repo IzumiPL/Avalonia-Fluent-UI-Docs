@@ -24,6 +24,7 @@ Avalonia Fluent UI 提供了丰富的 UI 控件，按照功能分类如下：
 - [内容对话框 (ContentDialog)](/zh/components/dialog/dialog)
 - [颜色选择器 (ColorPicker)](/zh/components/dialog/color_picker)
 - [弹出组件 (Flyout)](/zh/components/dialog/flyout)
+- [气泡弹窗 (TeachingTip)](/zh/components/dialog/teaching_tip)
 
 ## 布局
 
@@ -43,6 +44,7 @@ Avalonia Fluent UI 提供了丰富的 UI 控件，按照功能分类如下：
 
 - [信息徽章 (InfoBadge)](/zh/components/status_and_information/info_badge)
 - [进度条 (ProgressBar)](/zh/components/status_and_information/progress_bar)
+- [信息条 (InfoBar)](/zh/components/status_and_information/info_bar)
 - [进度环 (ProgressRing)](/zh/components/status_and_information/progress_ring)
 - [工具提示 (Tooltip)](/zh/components/status_and_information/tool_tip)
 
@@ -50,6 +52,18 @@ Avalonia Fluent UI 提供了丰富的 UI 控件，按照功能分类如下：
 
 - [输入框 (TextBox)](/zh/components/text/text_box)
 - [数字输入框 (NumericTextBox)](/zh/components/text/number_box)
+
+## 选择器
+
+- [快捷键选择器 (ShortcutKeyPicker)](/zh/components/pickers/shortcut_key_picker)
+- [文件文件夹选择器 (File | FolderDropPicker)](/zh/components/pickers/file_folder_drop_picker)
+
+## 视图
+
+- [头像 (Avatar)](/zh/components/view/avatar)
+- [翻转视图 (FlipView)](/zh/components/view/flip_view)
+- [列表 (ListBox)](/zh/components/view/list_box)
+- [向导视图 (WizardView)](/zh/components/view/wizard_view)
 
 ## 窗口
 

@@ -7,7 +7,7 @@ permalink: /zh/components/dialog/flyout/
 # 弹出组件
 
 
-## 弹出组件 (Flyout)
+## 弹出组件 (FluentFlyout)
 <div align="center">
   <img src="/img/flyout.png"  style="border-radius:12px;">
 </div>

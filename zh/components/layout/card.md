@@ -4,44 +4,45 @@ date: 2024-01-01 00:00:00
 permalink: /zh/components/layout/card/
 ---
 
-## 卡片 (Card)
-
-<div align="center">
-  <img src="/img/card.png"  style="border-radius:12px;">
-</div>
-
-* 卡片控件,Content可放任意内容
-
-```xml
-<ui:Card Width="512">
-      <SelectableTextBlock
-          HorizontalAlignment="Center"
-          VerticalAlignment="Center"
-          Text="卡片" />
-  </ui:Card>
-```
-
 ## 简单卡片 (SimpleCard)
 
 <div align="center">
   <img src="/img/simples_card.png"  style="border-radius:12px;">
 </div>
 
-* 和卡片控件不同的是, 他会随鼠标进入变化
+* 卡片控件,Content可放任意内容
 
 ```xml
 <ui:SimpleCard>
-    <TextBlock
-        HorizontalAlignment="Center"
-        VerticalAlignment="Center"
-        Text="简单卡片, 鼠标进入改变样式" />
+      <SelectableTextBlock
+          HorizontalAlignment="Center"
+          VerticalAlignment="Center"
+          Text="卡片" />
 </ui:SimpleCard>
-<ui:SimpleCard Classes="Outlined">
+```
+
+## 卡片 (Card)
+
+* 和`SimpleCard`卡片控件不同的是, 他会随鼠标进入变化
+
+<div align="center">
+  <img src="/img/card.png"  style="border-radius:12px;">
+</div>
+
+
+```xml
+<ui:Card Width="512">
+        <TextBlock
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Text="简单卡片, 鼠标进入改变样式" />
+</ui:Card>
+<ui:Card Classes="Outlined">
     <TextBlock
         HorizontalAlignment="Center"
         VerticalAlignment="Center"
         Text="简单卡片, 鼠标进入改变样式 (Outlined Style)" />
-</ui:SimpleCard>
+</ui:Card>
 ```
 
 
@@ -199,4 +200,13 @@ permalink: /zh/components/layout/card/
     Content="可点击"
     IsClickEnabled="True"/>
 </ui:SettingsExpander>
+```
+
+## 带标题的组设置卡(GroupHeaderCard)
+
+<div align="center">
+  <img src="/img/group_header_card.png"  style="border-radius:12px;">
+</div>
+
+```xml
 ```

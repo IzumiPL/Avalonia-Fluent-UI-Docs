@@ -7,7 +7,7 @@ permalink: /zh/components/basic_input/combobox/
 # 下拉框
 
 
-## 下拉框 (FluentComboBox)
+## 下拉框 (ComboBox)
 
 <div align="center">
   <img src="../../../public/img/combo_box.png"  style="border-radius:12px;">
@@ -24,5 +24,5 @@ permalink: /zh/components/basic_input/combobox/
 </div>
 
 ```xml
-<ui:MultiSelectionComboBox Width="256" ItemsSource="{Binding Items}"></ui:MultiSelectionComboBox>
+<ui:MultiSelectionComboBox Width="328" ItemsSource="{Binding Items}"></ui:MultiSelectionComboBox>
 ```
