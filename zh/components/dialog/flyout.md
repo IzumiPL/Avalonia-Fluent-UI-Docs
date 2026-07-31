@@ -104,3 +104,31 @@ permalink: /zh/components/dialog/flyout/
     </Button.Flyout>
 </Button>
 ``` 
+
+
+## 弹出抽屉 (PopupDrawer)
+<div align="center">
+  <img src="/img/popup_drawer.png"  style="border-radius:12px;">
+</div>
+
+```xml
+<fui:PopupDrawer
+    CloseButtonIsVisible="True"
+    DrawerWidth="328"
+    IsLightDismissEnabled="False"
+    IsOpen="True"
+    Position="Right">
+    <Panel Margin="15,15,15,15">
+    <TextBlock
+        HorizontalAlignment="Left"
+        VerticalAlignment="Top"
+        Classes="SubTitle"
+        Text="标题"/>
+    <TextBlock
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Text="没有新通知"/>
+    </Panel>
+</fui:PopupDrawer>
+
+```

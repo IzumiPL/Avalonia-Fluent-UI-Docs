@@ -6,6 +6,32 @@ permalink: /zh/pages/changelog/
 
 # 更新日志
 
+## v2.0.4
+
+#### 修复
+
+* 修复了在Android平台下 `ComboBox` `NumberBox` `FluentFlyout` 打开时崩溃的问题
+* 修复 `SelectableTextBlock` 使用了自定义 `ContextFlyout` 时鼠标悬停手势样式错误问题
+* 修复 ShortchutKeyPicker 无法选择 `Enter` 和 `Space` 的问题
+
+#### 其他更改
+
+* 修改了 `SegmentedView` `SegmentedToggleView` 的底部指示器实现方法及动画
+* 删除了 `Expander` 的 `ExpanderWinUIAnimationStyle` 样式
+* `HyperlinkButton` 添加 `:visited` 样式
+* 添加了 `TableView` 的Fluent样式支持
+* `LocalizationService` 支持添加`resx`翻译文件到程序集内嵌资源
+* 修改了 `ExpanderSettingCard` 实现方法
+* Avalonia 版本升级到 `12.1.0`
+
+#### 新增控件
+* 添加 `FluentExpander` 带动画的展开控件 
+* 添加 `Tag` 标签控件
+* 添加 [WizardView](/zh/components/navigation/wizard_view.md#向导视图-wizardview) 向导视图控件
+* 添加 [GroupHeaderCard](/zh/components/layout/card.md#带标题的组设置卡groupheadercard) 设置卡组控件
+* 添加 [OutlinedTextBox](/zh/components/text/text_box.md#轮廓文本框-outlinedtextbox) 轮廓文本框控件
+* 添加 [ImageLabel](/zh/components/media/image_label.md#图片-imagelabel) 图片控件
+
 ## v2.0.3
 
 * 优化了弹出控件的阴影效果

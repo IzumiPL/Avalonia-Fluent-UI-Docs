@@ -15,7 +15,7 @@ export default defineConfig({
         nav: [
             { text: '指南', link: '/zh/pages/about' },
             { text: '组件', link: '/zh/pages/components' },
-            // { text: 'GitHub', link: 'https://github.com/HiyorinI' }
+            { text: '更新日志', link: '/zh/pages/changelog'},
         ],
 
         sidebar: {
@@ -64,12 +64,26 @@ export default defineConfig({
                     ]
                 },
                 {
+                    text: "媒体",
+                    items: [
+                        { text: '图片', link: '/zh/components/media/image_label' },
+                    ]
+                },
+                {
+                    text: "菜单",
+                    items: [
+                        { text: '命令栏', link: '/zh/components/menu/command_bar' },
+                        { text: '顶部菜单栏', link: '/zh/components/menu/menu' },
+                    ]
+                },
+                {
                     text: '导航',
                     items: [
                         { text: '侧边导航', link: '/zh/components/navigation/navigation_view' },
                         { text: '顶部导航栏', link: '/zh/components/navigation/top_navigation' },
                         { text: '标签页', link: '/zh/components/navigation/tab_control' },
                         { text: '面包屑导航', link: '/zh/components/navigation/breadcrumb_bar' },
+                        { text: '向导视图', link: '/zh/components/navigation/wizard_view' },
                     ]
                 },
                 {
@@ -108,7 +122,6 @@ export default defineConfig({
                         { text: '翻转视图', link: '/zh/components/view/flip_view' },
                         { text: '列表', link: '/zh/components/view/list_box' },
                         { text: '头像', link: '/zh/components/view/avatar' },
-                        { text: '向导视图', link: '/zh/components/view/wizard_view' },
                     ]
                 },
                 {
@@ -159,12 +172,12 @@ export default defineConfig({
         },
 
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/HiyorinI' }
+            { icon: 'github', link: 'https://github.com/IzumiPL/Avalonia-Fluent-UI' }
         ],
 
         footer: {
             message: '基于 MIT 许可发布',
-            copyright: 'Copyright © 2024 HiyorinI'
+            copyright: 'Copyright © 2024 IzumiPL'
         },
 
         editLink: false,

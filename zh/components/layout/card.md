@@ -158,48 +158,40 @@ permalink: /zh/components/layout/card/
 <ui:SettingCard Description="H我是设置卡的描述" Header="没有图标的设置卡" />
 ```
 
-## 可点击的设置卡 (SettingsExpander)
+## 可点击的设置卡
 
 <div align="center">
-  <img src="/img/clicked_setting_expander_card.png"  style="border-radius:12px;">
+  <img src="/img/setting_card_with_click.png"  style="border-radius:12px;">
 </div>
 
 ```xml
-<ui:SettingsExpander
-    ActionIconSource="ChevronRight"
-    Description="设置当前系统的音量"
-    Header="音量"
-    IsClickEnabled="True"
-    IconSource="{x:Static fi:FluentIcon.Volume}">
-</ui:SettingsExpander>
+<ui:SettingCard
+  Classes="Clicked"
+  Description="可以点击的设置卡"
+  Header="设置卡"/>
 ```
 
 
-## 可展开的设置卡
+## 展开设置卡 (ExpanderSettingCard)
 
 <div align="center">
   <img src="/img/expander_setting_card.png"  style="border-radius:12px;">
 </div>
 
 ```xml
-<ui:SettingsExpander
-    Description="应用语音设置"
-    Header="语音"
-    IconSource="Microphone">
-    <ui:SettingsExpanderItem Content="耳机" Description="设备名称"/>
-    <ui:SettingsExpanderItem Content="设备" Description="带按钮"/>
-    <ui:SettingsExpanderItem.Footer>
-        <ui:PushButton
-        Classes="Accent"
-        Content="添加设备"
-        IconData="{DynamicResource Add}"/>
-    </ui:SettingsExpanderItem.Footer>
-    </ui:SettingsExpanderItem>
-    <ui:SettingsExpanderItem
-    ActionIconSource="ChevronRight"
-    Content="可点击"
-    IsClickEnabled="True"/>
-</ui:SettingsExpander>
+<ui:ExpanderSettingCard
+  Description="应用语音设置"
+  Header="语音"
+  IconSource="Microphone">
+  <ui:ExpanderSettingCardItem Description="设备名称" Header="耳机"/>
+  <ui:ExpanderSettingCardItem Description="带按钮" Header="设备">
+    <ui:PushButton
+      Classes="Accent"
+      Content="添加设备"
+      IconSource="{x:Static fi:FluentIcon.Add}"/>
+  </ui:ExpanderSettingCardItem>
+  <ui:ExpanderSettingCardItem Content="可点击" IsClickEnabled="True"/>
+</ui:ExpanderSettingCard>
 ```
 
 ## 带标题的组设置卡(GroupHeaderCard)

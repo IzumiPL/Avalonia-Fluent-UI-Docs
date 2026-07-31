@@ -44,6 +44,20 @@ permalink: /zh/components/text/text_box/
     PlaceholderText="请输入密码"/>
 ```
 
+## 轮廓文本框 (OutlinedTextBox)
+
+<div align="center">
+  <img src="/img/outlined_text_box.png" style="border-radius:12px;">
+</div>
+
+
+```xml
+<ui:OutlinedTextBox
+  Width="328"
+  Classes="Clear"
+  PlaceholderText="请输入文本"/>
+```
+
 
 ## 搜索输入框 (SearchTextBox)
 

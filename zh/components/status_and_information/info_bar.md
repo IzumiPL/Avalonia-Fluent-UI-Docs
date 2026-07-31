@@ -59,15 +59,15 @@ permalink: /zh/components/status_and_information/info_bar/
 
 ```csharp
 // 注册Manager
-private PopupInfoBarManager PopupManager { get; } = new();
-private ToastInfoBarManager ToastManager { get; } = new();
+private PopupInfoBarManager PopupBarManager { get; } = InfoBarHost.GetManager<PopupInfoBarManager>();
+private ToastInfoBarManager ToastBarManager { get; } = InfoBarHost.GetManager<ToastInfoBarManager>();
 
 public MainWindow()
 {
     InitializeComponent();
     // 注册 manager 到 InfoBarHost
-    InfoBarHost.RegisterManager(PopupManager);
-    InfoBarHost.RegisterManager(ToastManager);
+    InfoBarHost.RegisterManager<PopupInfoBarManager>();
+    InfoBarHost.RegisterManager<ToastInfoBarManager>();
 }
 
 ```
@@ -146,7 +146,7 @@ PopupManager.New(
 
 ```csharp
 // 注册Manager
-InfoBarHost.RegisterManager(new PopupInfoBarManager());
+InfoBarHost.RegisterManager<PopupInfoBarManager>();
 
 // 使用
 InfoBarHost.GetManager<PopupInfoBarManager>().Information(

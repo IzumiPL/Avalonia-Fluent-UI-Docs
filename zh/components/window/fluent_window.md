@@ -208,6 +208,77 @@ NavigationView.PropertyChanged += (_, e) =>
 };
 ```
 
+## 微软商店样式导航视图
+
+<div align="center">
+    <img src="/img/msf_navigation_view.png" style="border-radius:12px;">
+</div>
+
+```xml
+<ui:NavigationView
+    Name="MSFNavigationView"
+    Margin="0,50,0,0"
+    Classes="MSNavigationView"
+    IsSettingsVisible="True">
+    <ui:NavigationView.MenuItems>
+      <ui:NavigationViewItem
+        Classes="MSNavigationViewItem"
+        Content="主页"
+        IconSource="{x:Static fi:FluentIcon.Home}"/>
+      <ui:NavigationViewItem
+        Classes="MSNavigationViewItem"
+        Content="库"
+        IconSource="{x:Static fi:FluentIcon.LibraryFill}"/>
+      <ui:NavigationViewItem
+        Classes="MSNavigationViewItem"
+        Content="编辑"
+        IconSource="{x:Static fi:FluentIcon.Edit}"/>
+    </ui:NavigationView.MenuItems>
+
+    <ui:NavigationView.FooterMenuItems>
+      <ui:NavigationViewItem
+        Classes="MSNavigationViewItem"
+        Content="公告"
+        IconSource="M32 5.344v20.609q0 0.609-0.234 1.164t-0.641 0.961-0.945 0.648-1.164 0.242q-0.25 0-0.5-0.039t-0.469-0.117l-9.5-3.172q-0.359 0.922-0.977 1.672t-1.422 1.289-1.734 0.836-1.914 0.297q-1.297 0-2.477-0.5t-2.070-1.367-1.422-2.023-0.531-2.484v-1.906l-3.953-1.313q-0.938-0.313-1.492-1.086t-0.555-1.758v-5.031q0-0.516 0.164-0.977t0.461-0.844 0.703-0.664 0.906-0.406l26-6.938q0.375-0.094 0.766-0.094 0.625 0 1.172 0.234t0.953 0.641 0.641 0.953 0.234 1.172zM30 5.344q0-0.422-0.289-0.711t-0.711-0.289q-0.094 0-0.25 0.031l-26 6.922q-0.328 0.094-0.539 0.367t-0.211 0.602v5.031q0 0.313 0.195 0.578t0.492 0.359l26 8.672q0.141 0.047 0.313 0.047 0.406 0 0.703-0.297t0.297-0.703v-20.609zM16.641 25l-8.641-2.875v1.188q0 0.891 0.359 1.688t0.969 1.406 1.406 0.969 1.688 0.359q0.688 0 1.328-0.188t1.195-0.539 0.984-0.859 0.711-1.148z"
+        SelectsOnInvoked="False"
+        Tag="Navigation">
+
+        <ui:NavigationViewItem.InfoBadge>
+          <ui:InfoBadge Classes="Attention" Value="10"/>
+        </ui:NavigationViewItem.InfoBadge>
+      </ui:NavigationViewItem>
+
+
+      <ui:NavigationViewItem
+        Classes="MSNavigationViewItem"
+        Content="主页"
+        IconSource="avares://MSFNavTest/Assets/Setting.png"/>
+    </ui:NavigationView.FooterMenuItems>
+
+    <ui:NavigationView.Content>
+      <StackPanel
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Orientation="Horizontal"
+        Spacing="6">
+        <Border Classes="zoom-border"/>
+        <Border Classes="zoom-border"/>
+        <Border Classes="zoom-border"/>
+        <Border Classes="zoom-border"/>
+        <Border Classes="zoom-border"/>
+      </StackPanel>
+    </ui:NavigationView.Content>
+  </ui:NavigationView>
+```
+
+```csharp
+protected override void OnLoaded(RoutedEventArgs e)
+{
+    MSFNavigationView.SettingsItem.Classes.Add("MSNavigationViewItem");
+    base.OnLoaded(e);
+}
+```
+
 ## 启动页面
 
 ### 继承`IApplicationSplashScreen`实现成员方法

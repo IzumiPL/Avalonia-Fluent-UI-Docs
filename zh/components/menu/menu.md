@@ -599,8 +599,9 @@ permalink: /zh/components/menu/menu/
 
 ## 系统托盘菜单
 
+* 在App.axaml.cs里添加
+
 ```xml
-# 写再App.xaml
 <TrayIcon.Icons>
     <TrayIcons>
       <TrayIcon Icon="/Assets/app.ico" ToolTipText="Avalonia Tray Icon ToolTip">
