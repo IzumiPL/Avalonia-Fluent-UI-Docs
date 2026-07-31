@@ -194,4 +194,6 @@ export default defineConfig({
     },
 
     base: '/',
+
+    ignoreDeadLinks: false
 })

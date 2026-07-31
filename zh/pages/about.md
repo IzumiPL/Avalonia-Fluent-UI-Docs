@@ -23,8 +23,8 @@ Avalonia Fluent UI 是一个基于 Avalonia UI 框架的 Fluent Design 风格组
 
 ## 社区
 
-- [GitHub 仓库](https://github.com/HiyorinI/AvaloniaFluentUi)
-- [问题反馈](https://github.com/HiyorinI/AvaloniaFluentUi/issues)
+- [GitHub 仓库](https://github.com/IzumiPL/Avalonia-Fluent-UI)
+- [问题反馈](https://github.com/IzumiPL/Avalonia-Fluent-UI/issues)
 
 ## 贡献
 

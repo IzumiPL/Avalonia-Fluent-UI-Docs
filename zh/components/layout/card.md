@@ -4,6 +4,8 @@ date: 2024-01-01 00:00:00
 permalink: /zh/components/layout/card/
 ---
 
+# 卡片
+
 ## 简单卡片 (SimpleCard)
 
 <div align="center">

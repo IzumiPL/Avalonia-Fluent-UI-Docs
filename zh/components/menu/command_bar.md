@@ -5,7 +5,7 @@ permalink: /zh/components/menu/command_bar/
 ---
 
 
-# 命令栏?
+# 命令栏
 
 ## 命令栏(CommandBar)
 

@@ -7,7 +7,7 @@ permalink: /zh/pages/install/
 # 安装指南
 
 > [!Info]
-> 本文档基于的 Avalonia 的版本是 `12.0.3`，AvaloniaFluentUI 的版本是 `2.0.2`，最新版可能与文档会有所不同，请您依据实际情况进行调整。
+> 本文档基于的 Avalonia 的版本是 `12.1.0`，AvaloniaFluentUI 的版本是 `2.0.4`，最新版可能与文档会有所不同，请您依据实际情况进行调整。
 
 ## 通过 NuGet 安装
 

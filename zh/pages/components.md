@@ -63,7 +63,7 @@ Avalonia Fluent UI 提供了丰富的 UI 控件，按照功能分类如下：
 - [头像 (Avatar)](/zh/components/view/avatar)
 - [翻转视图 (FlipView)](/zh/components/view/flip_view)
 - [列表 (ListBox)](/zh/components/view/list_box)
-- [向导视图 (WizardView)](/zh/components/view/wizard_view)
+- [向导视图 (WizardView)](/zh/components/navigation/wizard_view.md)
 
 ## 窗口
 
