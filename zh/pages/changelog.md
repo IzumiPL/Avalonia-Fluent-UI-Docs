@@ -27,6 +27,7 @@ permalink: /zh/pages/changelog/
 #### 新增控件
 * 添加 `FluentExpander` 带动画的展开控件 
 * 添加 `Tag` 标签控件
+* 添加 [PopupDrawer](/zh/components/dialog/flyout.md#弹出抽屉-popupdrawer)) 弹出抽屉控件
 * 添加 [WizardView](/zh/components/navigation/wizard_view.md#向导视图-wizardview) 向导视图控件
 * 添加 [GroupHeaderCard](/zh/components/layout/card.md#带标题的组设置卡groupheadercard) 设置卡组控件
 * 添加 [OutlinedTextBox](/zh/components/text/text_box.md#轮廓文本框-outlinedtextbox) 轮廓文本框控件
