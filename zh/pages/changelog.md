@@ -6,6 +6,37 @@ permalink: /zh/pages/changelog/
 
 # 更新日志
 
+## v2.0.5
+
+#### 修复
+
+* 修复了 `NumericUpDown` 增加,减少按钮显示错误问题
+* 修复了 `SplitView` 当 `PanePlacment` 为 `Top` `Bottom` 面板显示错误问题
+* 修复了 `FluentWindow` 在 `windows10` 上设置圆角边框样式错误问题
+* `PopupInfoBar` `ToastInfoBar` 添加 `Orientation(内容布局方向)` 属性 
+* 修复在 `Linux` 上 `CanResize` 设置为 `False` 时还可改变窗口大小的问题
+
+#### 其他更改
+
+* `PopupDrawer` 添加关闭按钮
+* 优化了 `AutoCompleteBox` 弹出补全框样式
+* `FluentColorView` 新增 `ColorSpectrumShape` `IsAlphaVisible` 属性
+* 优化了 `ToolTipSlider` 工具提示显示
+* 修改了 `RangeSlider` 工具提示显示效果, 默认同时显示两个
+* `SegmentedView` `SegmentedToggleView` 添加动画配置属性 `AnimationDuration` 和 `AnimationEasing` 
+* `AvaloniaFluentTheme` 移除 `CurrentAccentColor` `CustomAccentColor` 统一更改为 `AccentColor`, 并添加 `Loale` 属性
+* 重构 `SmoothScrollContentPresenter` `SingleDirectionScrollContentPresenter` 平滑滚动实现方式, 优化了视觉体验
+* 重构 `SmoothScrollSnapContentPresenter` 滚动吸附方式
+* 重构 `FluentWindow` 标题栏, 默认使用 `FluentTitleBar` 作为默认标题栏
+* 重构 `TabView` 拖拽排序并修复拖拽导致程序崩溃问题, 并移除 `AllowDropTabs` 属性
+* 优化了 `NumberBox` 弹出增加减少窗口样式
+
+
+
+#### 新增控件
+* 添加 `TimeLine` 时间线控件
+* 添加 `SegmentedToggleItem` 控件, 适用于 `SegmentedToggleView`
+
 ## v2.0.4
 
 #### 修复
@@ -27,7 +58,7 @@ permalink: /zh/pages/changelog/
 #### 新增控件
 * 添加 `FluentExpander` 带动画的展开控件 
 * 添加 `Tag` 标签控件
-* 添加 [PopupDrawer](/zh/components/dialog/flyout.md#弹出抽屉-popupdrawer)) 弹出抽屉控件
+* 添加 [PopupDrawer](/zh/components/dialog/flyout.md#弹出抽屉-popupdrawer) 弹出抽屉控件
 * 添加 [WizardView](/zh/components/navigation/wizard_view.md#向导视图-wizardview) 向导视图控件
 * 添加 [GroupHeaderCard](/zh/components/layout/card.md#带标题的组设置卡groupheadercard) 设置卡组控件
 * 添加 [OutlinedTextBox](/zh/components/text/text_box.md#轮廓文本框-outlinedtextbox) 轮廓文本框控件
