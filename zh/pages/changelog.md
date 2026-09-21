@@ -13,7 +13,6 @@ permalink: /zh/pages/changelog/
 * 修复了 `NumericUpDown` 增加,减少按钮显示错误问题
 * 修复了 `SplitView` 当 `PanePlacment` 为 `Top` `Bottom` 面板显示错误问题
 * 修复了 `FluentWindow` 在 `windows10` 上设置圆角边框样式错误问题
-* `PopupInfoBar` `ToastInfoBar` 添加 `Orientation(内容布局方向)` 属性 
 * 修复在 `Linux` 上 `CanResize` 设置为 `False` 时还可改变窗口大小的问题
 
 #### 其他更改
@@ -30,7 +29,7 @@ permalink: /zh/pages/changelog/
 * 重构 `FluentWindow` 标题栏, 默认使用 `FluentTitleBar` 作为默认标题栏
 * 重构 `TabView` 拖拽排序并修复拖拽导致程序崩溃问题, 并移除 `AllowDropTabs` 属性
 * 优化了 `NumberBox` 弹出增加减少窗口样式
-
+* `PopupInfoBar` `ToastInfoBar` 添加 `Orientation(内容布局方向)` 属性 
 
 
 #### 新增控件
