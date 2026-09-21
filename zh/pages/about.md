@@ -16,7 +16,7 @@ Avalonia Fluent UI 是一个基于 Avalonia UI 框架的 Fluent Design 风格组
 
 ## 技术栈
 
-- **框架**: Avalonia UI 12.0.3
+- **框架**: Avalonia UI 12.1.0
 - **语言**: C# .NET 10+
 - **设计风格**: Microsoft Fluent Design
 - **许可证**: MIT

@@ -10,7 +10,7 @@ AvaloniaFluentUI提供了LocalizationService类,用于翻译内置组件的文�
 
 >[!Warning]
 >须在获取值之前初始化里注册和设置默认地区,否则会获取不到Value 
-
+>可在`App.axaml`里设置主题时传入`Locale`属性设置默认语言
 
 ```csharp
 // 获取实例

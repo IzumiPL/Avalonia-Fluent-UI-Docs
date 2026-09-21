@@ -22,7 +22,10 @@ dotnet add package AvaloniaFluentUI
              xmlns:fluent="using:AvaloniaFluentUI.Styling"
              x:Class="MyFluentApp.App">
     <Application.Styles>
-        <fluent:AvaloniaFluentTheme />
+        <fluent:AvaloniaFluentTheme
+            AccentColor="DeepPink"  // 默认主题色
+            Locale="zh-CN"          // 默认语言 (zh-CN, en-US, ja-JP)
+         />
     </Application.Styles>
 </Application>
 ```

@@ -23,7 +23,7 @@ Avalonia Fluent UI 支持亮色和暗色两种主题模式。
               >
     <Application.Styles>
         <fluent:AvaloniaFluentTheme 
-        CustomAccentColor="DeepPink" // 自定义主题色
+        AccentColor="DeepPink" // 自定义主题色
         >
     </Application.Styles>
 </Application>
@@ -42,6 +42,9 @@ AvaloniaFluentTheme.Instance.CurrentTheme = ThemeVariant.Dark;
 
 // 切换到亮色主题
 AvaloniaFluentTheme.Instance.CurrentTheme = ThemeVariant.Light;
+
+// 切换主题
+AvaloniaFluentTheme.Instance.ToggleTheme();
 ```
 
 * 主题,主题色更改事件

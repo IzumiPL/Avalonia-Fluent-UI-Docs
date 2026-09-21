@@ -92,7 +92,6 @@ permalink: /zh/components/window/fluent_window/
   d:DesignHeight="450"
   d:DesignWidth="800"
   Icon="C:\Projects\C#\Avalonia-Fluent-UI\samples\Gallery\Assets\app.ico"
-  TitleBarMargin="50 0 0 0"
   mc:Ignorable="d">
 
   <wnd:FluentWindow.TitleBarContent>
@@ -199,6 +198,9 @@ permalink: /zh/components/window/fluent_window/
 ```csharp
 Application.Current.Resources["NavigationViewContentGridCornerRadius"] = new CornerRadius(0);
 
+var margin = TitleBarTemplateSettings.Margin;
+TitleBarTemplateSettings.Margin = new Thickness(margin.Left, margin.Top, IsWindows ? 135.99 : 135, margin.Bottom);
+
 NavigationView.PropertyChanged += (_, e) =>
 {
     if (e.Property == NavigationView.IsPaneOpenProperty)
@@ -303,8 +305,8 @@ public partial class MainWindow : AppWindow
     {
         InitializeComponent();
 
-        TitleBarIsVisible = false;
-        SplashScreen = new MainWindowSplashScreen(() => TitleBarIsVisible = true);
+        TitleBarTemplateSettings.IsVisible = false;
+        SplashScreen = new MainWindowSplashScreen(() => TitleBarTemplateSettings.IsVisible = true);
     }
 }
 
